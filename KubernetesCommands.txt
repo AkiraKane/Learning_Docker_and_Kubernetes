@@ -1,0 +1,12 @@
+##  deploy to the cluster
+kubectl create -f deployment.yaml
+
+## check a list of all the deployed objects 
+kubectl get deployment
+
+## details of individual deployments
+kubectl describe deployment webserverv1
+
+## deploy the Service
+kubectl create -f service.yaml
+
