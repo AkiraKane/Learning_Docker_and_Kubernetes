@@ -1,0 +1,11 @@
+## Build Docker Image
+docker build -t webserver-image:v1 .
+
+## a list of all the images on the host
+docker images
+
+## Run webserver bind port 80
+docker run -d -p 80:80 webserver-image:v1
+
+## access the result of port 80
+curl docker
